@@ -1,8 +1,15 @@
-import logo from "./logo.svg";
 import "./App.css";
+import Timer from "./Timer";
+import { useState } from "react";
 
 function App() {
-  return <div></div>;
+  const [isPaused] = useState();
+
+  return (
+    <main>
+      <Timer isPaused={isPaused} />
+    </main>
+  );
 }
 
 export default App;
